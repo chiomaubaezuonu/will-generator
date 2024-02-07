@@ -1,25 +1,33 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from './images/logo.png'
+import { Button } from 'antd'
 
 const Home = () => {
   return (
     <div>
-      <nav className='flex justify-between'>
+      <hr className='bg-red-800 text-red-800 w-full' />
+      <nav className='flex justify-between px-24 py-4'>
         <div>
-          <Image src={logo} alt='logo' />
+          <Image src={logo} alt='logo' className='w-[14rem]' />
         </div>
         <div>
-          <ul className='flex bg-green-500 p-4'>
-            <li className='pr-2'>FAQs</li>
-            <li className='pr-2'>About Us</li>
-            <li className='pr-2'>About Us</li>
-            <li className='pr-2'>GenerateWill</li>
-            <li className='pr-2'>Home</li>
+          <ul className='flex'>
+            <li className='py-2 px-4 text-[#777] text-base'><a href="/">Home</a></li>
+            <li className='py-2 px-4 text-[#777] text-base'>About Us</li>
+            <li className='py-2 px-4 text-[#777] text-base'>FAQs</li>
+            <li className='py-2 px-4 text-[#fff] text-base bg-blue-500'>GenerateWill</li>
+            <li className='py-2 px-4 text-[#777] text-base'>About Us</li>
           </ul>
         </div>
       </nav>
-      <div></div>
+      <div className='bg-[#2F323A] py-32 text-center'>
+        <h1 className='text-5xl text-white font-medium'>Always the completely free way <br /> to make your will.</h1>
+        <Button type='primary' className='bg-blue-500 mx-auto mt-8 px-14 text-lg text-center py-5'> GenerateWill </Button>
+      </div>
+      <div className='bg-green-500'>
+        <h3 className='text-center my-6 text-xl'>No account needed, no credit card - just 100% free! - Instant download (Word or PDF)</h3>
+      </div>
     </div>
   )
 }
