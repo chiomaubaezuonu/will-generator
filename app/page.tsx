@@ -16,7 +16,7 @@ const Home = () => {
           <ul className='flex'>
             <li className='py-2 px-4 text-[#777] text-base'><a href="/">Home</a></li>
             <li className='py-2 px-4 text-[#777] text-base'>About Us</li>
-            <li className='py-2 px-4 text-[#777] text-base'>FAQs</li>
+            <li className='py-2 px-4 text-[#777] text-base'><a href="/Faqs">FAQs</a></li>
             <li className='py-2 px-4 text-[#fff] text-base bg-blue-500'>GenerateWill</li>
             <li className='py-2 px-4 text-[#777] text-base'>About Us</li>
           </ul>

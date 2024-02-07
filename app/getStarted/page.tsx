@@ -2,10 +2,30 @@
 import React, { useState } from 'react'
 import logo from '../images/logo.png'
 import Image from 'next/image'
-import { Button, Input, Modal } from "antd"
+import { Button, Input, Modal, ConfigProvider } from "antd"
 
+// interface TokenType {
+//     colorPrimary?: string;
+//     borderRadius?: number;
+//     colorBgContainer?: string;
+// }
 const GetStarted = () => {
 
+    // <>
+
+    //     <ConfigProvider>
+    //         theme: TokenType={{
+    //             token: {
+    //                 // Seed Token
+    //                 colorPrimary: '#f6ffed',
+    //                 borderRadius: 2,
+
+    //                 // Alias Token
+    //                 colorBgContainer: '#f6ffed',
+    //             },
+    //         }}
+    //     </ConfigProvider>
+    // </>
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const showModal = () => {
@@ -23,7 +43,7 @@ const GetStarted = () => {
     return (
         <div>
             <Image src={logo} alt='logo' />
-            <form action="submit">
+            <form action="submit" className='w-1/2 mx-auto'>
                 <div>
                     <div className='flex'>
                         <Input type='text' placeholder="First Name*" />
