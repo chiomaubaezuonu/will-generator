@@ -1,7 +1,7 @@
 "use client"
 // import { Button,  DatePicker,  Input, Space, Typography } from 'antd'
 // import React from 'react'
-// import "./App.scss"
+import "./App.scss"
 // import logo from "./images/logo.png"
 // import Image from 'next/image'
 
@@ -46,9 +46,9 @@ const headerStyle: React.CSSProperties = {
 const contentStyle: React.CSSProperties = {
     textAlign: 'center',
     // minHeight: 120,
-    padding: '9rem 2rem',
+    padding: '7.8rem 2rem',
     lineHeight: '120px',
-    color: '#fff',
+    color: '#ffffff',
     // backgroundColor: '#0958d9',
     backgroundColor: '#2F323A'
 };
@@ -89,13 +89,13 @@ const App: React.FC = () => (
                 </div>
             </Header>
             <Content style={contentStyle}>
-                <Typography.Title level={1} style={{ color: 'white' }}>
-                    Always the completely free way to make your will.
+                <Typography.Title level={1} className="pageContentText">
+                    Always the completely free way <br /> to make your will.
                 </Typography.Title>
-                <Button>GenerateWill</Button>
+                <Button style={{textAlign:"center"}}>GenerateWill</Button>
             </Content>
             <Footer style={footerStyle}>
-                <Typography.Text>
+                <Typography.Text className='text-xl font-bold'>
                     No account needed, no credit card - just 100% free! - Instant download (Word or PDF)
                 </Typography.Text>
             </Footer>
