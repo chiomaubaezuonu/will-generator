@@ -34,7 +34,6 @@ const Home = () => {
       </div>  */}
 
  
-    <h1>Girlll</h1>
     <Antdtuts />
   </div> 
     
