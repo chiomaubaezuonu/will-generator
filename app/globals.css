@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .ant-btn {
+    background-color: green;
+    color: red;
+  }
+  
+  .ant-btn:hover {
+    background-color: rgb(216, 120, 136);
+    color: rgb(23, 0, 128);
+    border-color: rgb(23, 0, 128);
+  } */

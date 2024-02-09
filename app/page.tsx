@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from './images/logo.png'
-import { Button } from 'antd'
+import { Button, Typography } from 'antd'
 import Link from 'next/link'
+// import "./App.css"
+import Antdtuts from './antdtuts'
+// import Antdtuts from './antdtuts'
 
 const Home = () => {
   return (
     <div>
-      <hr className='bg-red-800 text-red-800 w-full' />
+     {/* <hr className='bg-red-800 text-red-800 w-full' />
       <nav className='flex justify-between px-24 py-4'>
         <div>
           <Image src={logo} alt='logo' className='w-[14rem]' />
@@ -28,8 +31,13 @@ const Home = () => {
       </div>
       <div className='bg-green-500'>
         <h3 className='text-center my-6 text-xl'>No account needed, no credit card - just 100% free! - Instant download (Word or PDF)</h3>
-      </div>
-    </div>
+      </div>  */}
+
+ 
+    <h1>Girlll</h1>
+    <Antdtuts />
+  </div> 
+    
   )
 }
 
