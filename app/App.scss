@@ -1,70 +1,10 @@
-// * {
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-// }
-
-// .ant-typography {
-//     color: red;
-//     display: block;
-//     font-size: 1.4rem;
-//     font-weight: bold;
-//     text-align: center;
-// }
-
-// .welcomeMsg {
-//     .ant-typography {
-//         color: green;
-//         font-size: 1.4rem;
-//         font-weight: bold;
-//         text-align: center;
-//     }
-// }
-
-// .ant-input {
-//     border-color: green;
-//     color: green;
-//     width: 50%;
-//     cursor:pointer;
-// }
-
-// .ant-input::placeholder {
-//     color: blue;
-    
-// }
-
-//   .ant-btn{
-  
-//     background-color: red;
-//     width:10rem;
-//     color:whitesmoke;
-//     font-weight: bold;
-//     border-radius: 1rem;
-//   }
-//   .ant-btn:hover{
-//     background-color: #404040;
-//     color: wheat;
-//   }
-//   .colorPrimaryBgHover{
-//     color: red;
-//   }
-//   .datePicker{
-//     width: 100%;
-//     border-color: green;
-//   }
-//   .ant-picker-cell-inner{
-//     color: green;
-//   }
-//   .ant-picker-input{
-//     color: rgb(205, 50, 156)
-//   }
 .ant-layout-header{
   background-color: white;
   color: red;
 }
 
 .ant-btn{
-  background-color: #980000;
+  background-color: #1677FF;
   color: white;
   border-radius: 0;
   border: none;
@@ -78,13 +18,13 @@ h1:where(.css-dev-only-do-not-override-1rqnfsa).ant-typography{
   color:white;
   font-weight: 700;
 }
-// :where(.css-dev-only-do-not-override-1rqnfsa).ant-btn{
-//   background-color: #980000;
-//   color: white;
-//   border-radius: 0;
-//   border: none;
-//   padding: 1rem 4rem 1.5rem 4rem;
-//   font-size: 1rem;
-//   height: 0;
-//   font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-// }
+.card-text{
+  margin-top: 2rem;
+  line-height: 1rem;
+   margin-bottom: 0.625rem;
+}
+
+.ant-btn:hover{
+  background-color: red;
+  color: red;
+}
