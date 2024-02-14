@@ -1,3 +1,4 @@
+"use client"
 import { Button, Form, Input, Modal, Space } from 'antd'
 import React, { useState } from 'react'
 
@@ -17,14 +18,14 @@ const Formpage = () => {
     const handleCancel = () => {
         setIsModalOpen(false);
     };
-    const handleForm = (e:any
-) => {
+    const handleForm = (e: any
+    ) => {
         e.preventDefault()
         console.log(name)
     }
     return (
         <div>
-            <form onSubmit={handleForm} className='py-6 px-24 flex flex-col'>
+            <form onSubmit={handleForm} className='py-6 px-24 flex flex-col justify-center'>
                 <Space direction='vertical'>
                     <Input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="First Name" className="py-3 w-[40rem] mx-auto border-blue-500" />
                     <Input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Last Name" className=" py-3 w-[40rem] mx-auto border-blue-500" />
@@ -35,9 +36,9 @@ const Formpage = () => {
                 <button onClick={showModal} className='w-1/5 text-lg mt-5 rounded-lg bg-blue-500 py-3'>Add Beneficiaries</button>
             </form>
             <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
+                <Input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="First Name" className="py-2 border-blue-500" />
+                <Input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Last Name" className="py-2 border-blue-500 my-4"  />
+                <Input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Percentage&#37; Name" className="py-3 border-blue-500" />
             </Modal>
         </div>
     )

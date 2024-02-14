@@ -1,10 +1,12 @@
 "use client"
+"use client"
 import "./App.scss"
 import React, { useState } from 'react';
 import { Layout, Flex, Typography, Button, Space, Input, ConfigProvider, Form } from 'antd';
 import logo from "./images/logo.png"
 import Image from 'next/image';
 import Formpage from "./form/page";
+import Link from "next/link";
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -77,15 +79,13 @@ const App: React.FC = () => {
                         <Typography.Title level={1} className="pageContentText">
                             Always the completely free way <br /> to make your will.
                         </Typography.Title>
-                        <Button type="primary" onClick={() => setOpenForm(!openForm)}>GenerateWill</Button>
+                        <Link href="/form"><Button type="primary" onClick={() => setOpenForm(!openForm)}>GenerateWill</Button></Link>
                     </Content>
                     <Footer style={footerStyle}>
                         <Typography.Text className='text-xl font-bold'>
                             No account needed, no credit card - just 100% free! - Instant download (Word or PDF)
                         </Typography.Text>
                     </Footer>
-                    {openForm &&
-                        <Formpage />}
                 </Layout>
 
 
